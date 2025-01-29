@@ -15,6 +15,15 @@
 - setup-env test: go install sigs.k8s.io/controller-runtime/tools/setup-envtest@latest
 - export KUBEBUILDER_ASSETS=$(pwd)/testbin/k8s/1.26.0-darwin-arm64 for the above
 
+### To run the tests locally
+
+Set up the setup-envtest from the root folder of the project.
+```sh
+setup-envtest use 1.31 --bin-dir=./bin
+cd internal
+go test ./controller/...
+```
+
 ### To Deploy on the cluster
 **Build and push your image to the location specified by `IMG`:**
 
