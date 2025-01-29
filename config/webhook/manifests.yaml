@@ -1,0 +1,27 @@
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+metadata:
+  name: validating-webhook-configuration
+webhooks:
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    service:
+      name: webhook-service
+      namespace: system
+      path: /validate-focom-oss-ericsson-com-v1alpha1-focomprovisioningrequest
+  failurePolicy: Fail
+  name: vfocomprovisioningrequest.kb.io
+  rules:
+  - apiGroups:
+    - focom.oss.ericsson.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - focomprovisioningrequests
+  sideEffects: None
