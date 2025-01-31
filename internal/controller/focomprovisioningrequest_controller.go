@@ -41,6 +41,7 @@ type FocomProvisioningRequestReconciler struct {
 const focomFinalizer = "focom.oss.ericsson.com/finalizer"
 
 // +kubebuilder:rbac:groups=focom.oss.ericsson.com,resources=focomprovisioningrequests,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=provisioning.oran.org,resources=templateinfoes,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=focom.oss.ericsson.com,resources=focomprovisioningrequests/status,verbs=get;update;patch
 // +kubebuilder:rbac:groups=focom.oss.ericsson.com,resources=focomprovisioningrequests/finalizers,verbs=update
 

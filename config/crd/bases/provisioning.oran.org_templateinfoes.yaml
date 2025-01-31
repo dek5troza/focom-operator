@@ -4,9 +4,9 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.16.1
-  name: templateinfoes.provisioning.oss.ericsson.com
+  name: templateinfoes.provisioning.oran.org
 spec:
-  group: provisioning.oss.ericsson.com
+  group: provisioning.oran.org
   names:
     kind: TemplateInfo
     listKind: TemplateInfoList

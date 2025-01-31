@@ -8,7 +8,7 @@ metadata:
   name: provisioning-templateinfo-viewer-role
 rules:
 - apiGroups:
-  - provisioning.oss.ericsson.com
+  - provisioning.oran.org
   resources:
   - templateinfoes
   verbs:
@@ -16,7 +16,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - provisioning.oss.ericsson.com
+  - provisioning.oran.org
   resources:
   - templateinfoes/status
   verbs:

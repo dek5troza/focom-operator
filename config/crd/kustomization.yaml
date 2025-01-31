@@ -4,7 +4,7 @@
 resources:
 - bases/focom.oss.ericsson.com_oclouds.yaml
 - bases/focom.oss.ericsson.com_focomprovisioningrequests.yaml
-- bases/provisioning.oss.ericsson.com_templateinfoes.yaml
+- bases/provisioning.oran.org_templateinfoes.yaml
 # +kubebuilder:scaffold:crdkustomizeresource
 
 patches:

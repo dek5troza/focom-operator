@@ -1,5 +1,5 @@
 # magic-template-schema.yaml
-apiVersion: provisioning.oss.ericsson.com/v1alpha1
+apiVersion: provisioning.oran.org/v1alpha1
 kind: TemplateInfo
 metadata:
   name: red-hat-cluster-template-1.0.0
