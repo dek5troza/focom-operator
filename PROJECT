@@ -2,7 +2,7 @@
 # This file is used to track the info used to scaffold your project
 # and allow the plugins properly work.
 # More info: https://book.kubebuilder.io/reference/project-config.html
-domain: oss.ericsson.com
+domain: nephio.org
 layout:
 - go.kubebuilder.io/v4
 multigroup: true
@@ -15,7 +15,7 @@ resources:
 - api:
     crdVersion: v1
     namespaced: true
-  domain: oss.ericsson.com
+  domain: nephio.org
   group: focom
   kind: OCloud
   path: github.com/dekstroza/focom-operator/api/v1alpha1
@@ -24,7 +24,7 @@ resources:
     crdVersion: v1
     namespaced: true
   controller: true
-  domain: oss.ericsson.com
+  domain: nephio.org
   group: focom
   kind: FocomProvisioningRequest
   path: github.com/dekstroza/focom-operator/api/v1alpha1
@@ -32,7 +32,7 @@ resources:
 - api:
     crdVersion: v1
     namespaced: true
-  domain: oss.ericsson.com
+  domain: nephio.org
   group: provisioning
   kind: TemplateInfo
   path: github.com/dekstroza/focom-operator/api/provisioning/v1alpha1

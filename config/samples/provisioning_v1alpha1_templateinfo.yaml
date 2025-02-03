@@ -1,4 +1,4 @@
-apiVersion: provisioning.oss.ericsson.com/v1alpha1
+apiVersion: provisioning.nephio.org/v1alpha1
 kind: TemplateInfo
 metadata:
   labels:

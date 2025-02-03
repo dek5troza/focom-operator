@@ -8,7 +8,7 @@ metadata:
   name: focomprovisioningrequest-viewer-role
 rules:
 - apiGroups:
-  - focom.oss.ericsson.com
+  - focom.nephio.org
   resources:
   - focomprovisioningrequests
   verbs:
@@ -16,7 +16,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - focom.oss.ericsson.com
+  - focom.nephio.org
   resources:
   - focomprovisioningrequests/status
   verbs:

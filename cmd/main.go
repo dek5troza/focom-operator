@@ -128,7 +128,7 @@ func main() {
 		WebhookServer:          webhookServer,
 		HealthProbeBindAddress: probeAddr,
 		LeaderElection:         enableLeaderElection,
-		LeaderElectionID:       "7ad7da43.oss.ericsson.com",
+		LeaderElectionID:       "7ad7da43.nephio.org",
 		// LeaderElectionReleaseOnCancel defines if the leader should step down voluntarily
 		// when the Manager ends. This requires the binary to immediately end when the
 		// Manager is stopped, otherwise, this setting is unsafe. Setting this significantly
@@ -153,10 +153,7 @@ func main() {
 		setupLog.Error(err, "unable to create controller", "controller", "FocomProvisioningRequest")
 		os.Exit(1)
 	}
-	//if err := (&focomv1alpha1.FocomProvisioningRequest{}).SetupWebhookWithManager(mgr); err != nil {
-	//	setupLog.Error(err, "unable to create webhook for FocomProvisioningRequest")
-	//	os.Exit(1)
-	//}
+
 	// +kubebuilder:scaffold:builder
 
 	if err := mgr.AddHealthzCheck("healthz", healthz.Ping); err != nil {

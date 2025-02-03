@@ -8,7 +8,7 @@ metadata:
   name: ocloud-editor-role
 rules:
 - apiGroups:
-  - focom.oss.ericsson.com
+  - focom.nephio.org
   resources:
   - oclouds
   verbs:
@@ -20,7 +20,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - focom.oss.ericsson.com
+  - focom.nephio.org
   resources:
   - oclouds/status
   verbs:

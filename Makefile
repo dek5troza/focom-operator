@@ -28,8 +28,8 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 # This variable is used to construct full image tags for bundle and catalog images.
 #
 # For example, running 'make bundle-build bundle-push catalog-build catalog-push' will build and push both
-# oss.ericsson.com/focom-operator-bundle:$VERSION and oss.ericsson.com/focom-operator-catalog:$VERSION.
-IMAGE_TAG_BASE ?= oss.ericsson.com/focom-operator
+# nephio.org/focom-operator-bundle:$VERSION and nephio.org/focom-operator-catalog:$VERSION.
+IMAGE_TAG_BASE ?= nephio.org/focom-operator
 
 # BUNDLE_IMG defines the image:tag used for the bundle.
 # You can use it as an arg. (E.g make bundle-build BUNDLE_IMG=<some-registry>/<project-name-bundle>:<tag>)

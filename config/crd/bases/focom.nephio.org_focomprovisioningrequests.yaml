@@ -4,9 +4,9 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.16.1
-  name: focomprovisioningrequests.focom.oss.ericsson.com
+  name: focomprovisioningrequests.focom.nephio.org
 spec:
-  group: focom.oss.ericsson.com
+  group: focom.nephio.org
   names:
     kind: FocomProvisioningRequest
     listKind: FocomProvisioningRequestList

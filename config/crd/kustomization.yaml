@@ -2,8 +2,8 @@
 # since it depends on service name and namespace that are out of this kustomize package.
 # It should be run by config/default
 resources:
-- bases/focom.oss.ericsson.com_oclouds.yaml
-- bases/focom.oss.ericsson.com_focomprovisioningrequests.yaml
+- bases/focom.nephio.org_oclouds.yaml
+- bases/focom.nephio.org_focomprovisioningrequests.yaml
 - bases/provisioning.oran.org_templateinfoes.yaml
 # +kubebuilder:scaffold:crdkustomizeresource
 

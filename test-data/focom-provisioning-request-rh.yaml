@@ -1,4 +1,4 @@
-apiVersion: focom.oss.ericsson.com/v1alpha1
+apiVersion: focom.nephio.org/v1alpha1
 kind: FocomProvisioningRequest
 metadata:
   name: cluster1

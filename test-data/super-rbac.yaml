@@ -3,7 +3,7 @@ kind: ClusterRole
 metadata:
   name: access-clusterrolebindings
 rules:
-- apiGroups: ["provisioning.oss.ericsson.com"] # Specify the API group
+- apiGroups: ["provisioning.nephio.org"] # Specify the API group
   resources: ["templateinfoes"] # Specify the resource
   verbs: ["list", "get", "watch"] # Grant necessary permissions
 - apiGroups: ["*"] # Optionally keep access to all API groups
