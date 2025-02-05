@@ -25,8 +25,31 @@ Validation of the TemplateInfo parameters is not implemented yet, potentially th
 
 
 ## Getting Started
-g
 
+To build the code simply run the make command. Makefile provided, contains various targets to build, test and deploy the code.
+Building code:
+
+```sh
+make
+```
+
+To build the docker image, run the following command:
+
+```sh
+make docker-build docker-push IMG=your-docker-repository/focom-operator-poc:2.0.0
+```
+
+
+Kpt packages are included in the folder kpt-package, focom-operator.yaml file (is generated)/can be generaated by running make, where IMG is the image built previously:
+
+```sh
+make build-k8s-deployment IMG=your-docker-repository/focom-operator-poc:2.0.0
+```
+To deploy the operator on the cluster, run the following command:
+
+```sh
+make deploy IMG=your-docker-repository/focom-operator-poc:2.0.0
+```
 
 ### Prerequisites
 - go version v1.22.0+
@@ -45,6 +68,8 @@ setup-envtest use 1.31 --bin-dir=./bin
 cd internal
 go test ./controller/...
 ```
+
+
 
 ### To Deploy on the cluster
 **Build and push your image to the location specified by `IMG`:**
